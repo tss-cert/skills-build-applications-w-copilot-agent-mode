@@ -1,0 +1,71 @@
+:root {
+  /* Backgrounds */
+  --bg-gradient-start: #f8fafc;
+  --bg-gradient-end: #e9f2ff;
+
+  /* Text */
+  --text-primary: #1f2937; /* slate-800 */
+  --text-muted: #6b7280; /* gray-500 */
+
+  /* Brand colors */
+  --primary: #0d6efd;
+  --secondary: #6c757d;
+  --success: #198754;
+  --info: #0dcaf0;
+  --warning: #ffc107;
+  --danger: #dc3545;
+
+  /* UI tokens */
+  --card-radius: 0.75rem;
+  --accent: #0b5ed7;
+  --nav-bg: #0b5ed7;
+  --nav-text: #ffffff;
+}
+
+/* Dark theme variables when user prefers dark or data-theme="dark" is set */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-gradient-start: #0f1724;
+    --bg-gradient-end: #071022;
+    --text-primary: #e6eef8;
+    --text-muted: #9aa6b2;
+    --primary: #66a6ff;
+    --secondary: #4b5563;
+    --success: #2ecc71;
+    --info: #66d9ff;
+    --warning: #ffcf6b;
+    --danger: #ff6b6b;
+    --nav-bg: #07263b;
+    --nav-text: #ffffff;
+  }
+}
+
+/* Explicit dark theme when data-theme="dark" is set on html element */
+html[data-theme='dark'] {
+  --bg-gradient-start: #0f1724;
+  --bg-gradient-end: #071022;
+  --text-primary: #e6eef8;
+  --text-muted: #9aa6b2;
+  --primary: #66a6ff;
+  --secondary: #4b5563;
+  --success: #2ecc71;
+  --info: #66d9ff;
+  --warning: #ffcf6b;
+  --danger: #ff6b6b;
+  --nav-bg: #07263b;
+  --nav-text: #ffffff;
+}
+
+/* Utility helper classes to use in components */
+.bg-primary-custom { background-color: var(--primary) !important; color: #fff !important; }
+.bg-secondary-custom { background-color: var(--secondary) !important; color: #fff !important; }
+.bg-success-custom { background-color: var(--success) !important; color: #fff !important; }
+.bg-info-custom { background-color: var(--info) !important; color: #000 !important; }
+.bg-warning-custom { background-color: var(--warning) !important; color: #000 !important; }
+.bg-secondary-custom { background-color: var(--secondary) !important; color: #fff !important; }
+
+.text-primary-custom { color: var(--primary) !important; }
+.text-accent { color: var(--accent) !important; }
+
+.btn-primary-custom { background-color: var(--primary); border-color: var(--primary); color: #fff; }
+.btn-outline-light-custom { color: var(--nav-text); border-color: rgba(255,255,255,0.5); }

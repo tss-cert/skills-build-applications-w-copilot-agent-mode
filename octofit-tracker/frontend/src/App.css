@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Octofit custom styles */
+body {
+  background: linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+  color: var(--text-primary);
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.card-header h2 {
+  color: #ffffff;
+}
+
+.table thead th {
+  color: #ffffff;
+}
+
+.table-primary thead th { background-color: var(--primary) !important; }
+.table-success thead th { background-color: var(--success) !important; }
+.table-info thead th { background-color: var(--info) !important; }
+.table-warning thead th { background-color: var(--warning) !important; }
+.table-secondary thead th { background-color: var(--secondary) !important; }
+
+.btn-primary { background-color: var(--primary); border-color: var(--primary); }
+.btn-outline-light { color: var(--nav-text); border-color: rgba(255,255,255,0.5); }
+
+.display-4 { color: var(--primary); }
+.nav-link { color: var(--nav-text) !important; }
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+}
+
+.App-logo-small {
+  height: 36px;
+  margin-right: 10px;
+}
